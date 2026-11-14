@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مختبر القارئة الذكية | الرياض والملك الشجاع</title>
+<style>
+:root{--ink:#34445f;--teal:#5baeb0;--teal2:#e8f6f4;--mauve:#9272b8;--mauve2:#f3edf8;--gold:#e8bd58;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#edf8f7,#fbf7fc);font-family:Tahoma,Arial,sans-serif;color:var(--ink);line-height:1.8}
+.wrap{max-width:900px;margin:22px auto;padding:14px}
+.hero{background:linear-gradient(115deg,#5baeb0,#8b78b6);color:#fff;border-radius:25px;padding:22px;text-align:center;box-shadow:0 8px 22px #46577b20}
+.hero .tag{display:inline-block;background:#ffffff35;border:1px solid #ffffff70;border-radius:30px;padding:3px 14px;font-size:13px}
+h1{font-size:clamp(23px,4vw,34px);margin:8px 0}
+.hero p{margin:0}
+.panel{background:#fff;border:1px solid #e5eaf0;border-radius:22px;padding:20px;margin:18px 0;box-shadow:0 5px 18px #44557710}
+h2{font-size:21px;color:#6b6096;margin:0 0 12px}
+.reading{background:#fffdf7;border:2px solid #f1dfaa}
+.reading p{margin:0 0 10px}
+.tip{background:var(--teal2);border-radius:14px;padding:10px 14px;margin-top:12px;font-size:14px}
+button{font:inherit;cursor:pointer;border:0;border-radius:14px;padding:10px 18px;font-weight:bold}
+.primary{background:var(--mauve);color:white}
+.secondary{background:var(--teal2);color:#326f73}
+.question{border:1px solid #e8eaf0;border-radius:17px;padding:15px;margin:13px 0;background:#fff}
+.qhead{display:flex;justify-content:space-between;gap:8px;align-items:center;color:#6b6096;font-weight:bold}
+.qtext{font-weight:bold;margin:8px 0}
+.options{display:grid;gap:8px}
+.option{background:#f7f8fb;border:1px solid #e5e8ef;text-align:right;color:var(--ink);font-weight:normal}
+.option:hover{border-color:var(--teal);background:#f0fbfa}
+.option.selected{border:2px solid var(--mauve);background:var(--mauve2)}
+.option.correct{border:2px solid #55a67d;background:#effaf3}
+.option.wrong{border:2px solid #d77b83;background:#fff2f2}
+.feedback{font-size:14px;margin-top:7px;min-height:22px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:18px 0}
+.result{display:none;text-align:center;background:#f4eff9;border:2px solid #d9c9eb;border-radius:20px;padding:18px}
+.score{font-size:32px;color:#72579b;font-weight:bold}
+.small{font-size:13px;color:#6d7890}
+footer{text-align:center;color:#77839a;font-size:12px;padding:12px}
+@media print{body{background:white}.actions,footer{display:none}.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<span class="tag">الوحدة الثانية • ربوع من بلادي</span>
+<h1>🔎 مختبر القارئة الذكية</h1>
+<p>تحدي القراءة والفهم القرائي | الرياض والملك الشجاع</p>
+</header>
+
+<section class="panel">
+<h2>🌟 مهمتي اليوم</h2>
+<p>أقرأ النص بهدوء، وأعود إليه عند الحاجة، ثم أجيب عن الأسئلة لأكتشف مدى فهمي.</p>
+<div class="tip">تذكري: ابحثي عن الدليل في النص، ولا تتسرعي في اختيار الإجابة.</div>
+</section>
+
+<section class="panel reading">
+<h2>📖 أقرأ وأفهم</h2>
+<p>زارت نورة مع أسرتها مدينة الرياض، فحدثتها أمها عن الملك عبدالعزيز آل سعود، الذي استرد الرياض ووحّد البلاد تحت راية التوحيد. كان الملك شجاعًا وقائدًا ذكيًا، وكان يحرص على رفعة المملكة ونشر الأمن والرخاء في ربوعها.</p>
+<p>فرح الناس باسترداد الرياض، وأحبوا الملك عبدالعزيز لأنه أحب شعبه واهتم بمصلحة وطنه. ثم سألت نورة أباها عن سبب تسمية الرياض بهذا الاسم، فأخبرها أنها سُمّيت بذلك لأنها كانت رياضًا خضراء كثيرة البساتين والحدائق.</p>
+<p>والرياض عاصمة المملكة العربية السعودية وأكبر مدنها، وفيها مقر الحكم والوزارات والسفارات، كما تضم معالم تاريخية مثل قصر المصمك وآثار الدرعية التاريخية والمتحف الوطني.</p>
+<div class="tip">هذا نص تدريبي موجز بصياغة تعليمية مستندة إلى أفكار الدرس، وليس نقلًا حرفيًا من الكتاب.</div>
+</section>
+
+<section class="panel">
+<h2>🧠 أتحدى نفسي – أسئلة محاكية لنافس</h2>
+<p class="small">١٢ سؤال اختيار من متعدد. اختاري إجابة واحدة لكل سؤال، ثم اضغطي «اعرضي نتيجتي».</p>
+<div id="quiz"></div>
+<div class="actions">
+<button class="primary" onclick="grade()">اعرضي نتيجتي ⭐</button>
+<button class="secondary" onclick="resetQuiz()">إعادة المحاولة</button>
+</div>
+<div id="result" class="result" aria-live="polite"></div>
+</section>
+<footer>إعداد تدريبي لمهارات القراءة والفهم القرائي • الصف الثالث الابتدائي</footer>
+</div>
+<script>
+const questions=[
+{q:"ما الفكرة الرئيسة للنص؟",a:["زيارة نورة للحدائق","الرياض والملك عبدالعزيز ومكانة العاصمة","وسائل النقل في الرياض","أنواع الأشجار"],c:1,why:"النص يعرض استرداد الرياض، وصفات الملك، ومعلومات عن العاصمة."},
+{q:"من الذي حدثت الأم أبناءها عنه؟",a:["الملك عبدالعزيز آل سعود","أحد الرحالة","باني المتحف الوطني","أحد وزراء الرياض"],c:0,why:"ورد في النص أن الأم حدثتهم عن الملك عبدالعزيز آل سعود."},
+{q:"ما العمل الذي قام به الملك عبدالعزيز كما ورد في النص؟",a:["أنشأ حدائق الرياض","استرد الرياض ووحّد البلاد","بنى الجسور والأنفاق","نقل العاصمة"],c:1,why:"ذكر النص أنه استرد الرياض ووحّد البلاد تحت راية التوحيد."},
+{q:"ما معنى كلمة «الرخاء» في سياق النص؟",a:["الضيق","الراحة وسعة العيش","الخوف","السرعة"],c:1,why:"الرخاء يدل على سعة العيش والرفاه."},
+{q:"لماذا أحب الناس الملك عبدالعزيز؟",a:["لأنه أحب شعبه واهتم بوطنه","لأنه زار الحدائق","لأنه سافر كثيرًا","لأنه بنى بيوتًا عالية"],c:0,why:"النص يذكر أنه أحب شعبه فأحبوه."},
+{q:"لماذا سُمّيت الرياض بهذا الاسم؟",a:["لكثرة الجبال","لأنها كانت رياضًا خضراء كثيرة البساتين","لأنها قريبة من البحر","لأن شوارعها واسعة"],c:1,why:"أوضح الأب أنها كانت رياضًا خضراء كثيرة البساتين والحدائق."},
+{q:"أي معلومة تدل على أهمية مدينة الرياض؟",a:["أنها مدينة ساحلية","أنها عاصمة المملكة وفيها مقر الحكم والوزارات","أنها أصغر مدن المملكة","أنها تخلو من المعالم"],c:1,why:"ورد أنها عاصمة المملكة وفيها مقر الحكم والوزارات والسفارات."},
+{q:"أي مما يأتي ورد في النص بوصفه معلمًا تاريخيًا؟",a:["قصر المصمك","جسر الملك فهد","نافورة جدة","برج الساعة"],c:0,why:"ذكر النص قصر المصمك وآثار الدرعية والمتحف الوطني."},
+{q:"ما العلاقة بين حب الملك لشعبه وحب الشعب له؟",a:["سبب ونتيجة","تضاد","ترتيب زمني فقط","لا علاقة بينهما"],c:0,why:"أحب الملك شعبه فبادله الشعب المحبة."},
+{q:"أي عنوان فرعي يناسب الفقرة الأخيرة؟",a:["رحلة نورة","مكانة الرياض ومعالمها","صفات القائد الشجاع","زيارة الأسرة"],c:1,why:"الفقرة الأخيرة تتحدث عن مكانة الرياض ومعالمها."},
+{q:"ما الذي يمكن استنتاجه من سؤال نورة لأبيها عن اسم الرياض؟",a:["أنها فضولية وتحب معرفة تاريخ مدينتها","أنها لا تحب القراءة","أنها تريد مغادرة المدينة","أنها لا تستمع لأسرتها"],c:0,why:"سؤالها يدل على رغبتها في المعرفة وفهم سبب التسمية."},
+{q:"أي عبارة تلخص القيمة التي يدعو إليها النص؟",a:["الاعتزاز بالوطن ومعرفة تاريخه","إهمال المعالم التاريخية","عدم السؤال عن الماضي","الاهتمام بالمظاهر فقط"],c:0,why:"النص يعزز الاعتزاز بالوطن وتاريخه وقادته."}
+];
+const quiz=document.getElementById('quiz');
+function render(){
+ quiz.innerHTML='';
+ questions.forEach((item,i)=>{
+  const box=document.createElement('div');box.className='question';box.id='q'+i;
+  box.innerHTML='<div class="qhead"><span>السؤال '+(i+1)+'</span><span class="small">اختاري إجابة واحدة</span></div><div class="qtext">'+item.q+'</div><div class="options"></div><div class="feedback" id="f'+i+'"></div>';
+  const opts=box.querySelector('.options');
+  item.a.forEach((v,j)=>{
+   const b=document.createElement('button');b.className='option';b.textContent=String.fromCharCode(0x0623+j)+'. '+v;
+   b.onclick=()=>{box.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');b.dataset.pick=j;};
+   opts.appendChild(b);
+  });
+  quiz.appendChild(box);
+ });
+}
+function grade(){
+ let score=0,answered=0;
+ questions.forEach((item,i)=>{
+  const box=document.getElementById('q'+i),buttons=[...box.querySelectorAll('.option')],pick=buttons.findIndex(b=>b.classList.contains('selected'));
+  buttons.forEach((b,j)=>{b.disabled=true;if(j===item.c)b.classList.add('correct');if(j===pick&&pick!==item.c)b.classList.add('wrong');});
+  const f=document.getElementById('f'+i);
+  if(pick>=0){answered++;if(pick===item.c)score++;f.textContent=(pick===item.c?'أحسنتِ! ':'راجعي الإجابة. ')+item.why;}
+  else f.textContent='لم تختاري إجابة. '+item.why;
+ });
+ const result=document.getElementById('result');result.style.display='block';
+ result.innerHTML='<div>نتيجتكِ في تحدي القراءة</div><div class="score">'+score+' / '+questions.length+'</div><div>أجبتِ عن '+answered+' من ١٢ سؤالًا.</div><p>'+(score>=10?'ممتازة! قارئة متألقة 🌟':score>=7?'أداء جميل، واصلي التدريب 💜':'أعيدي قراءة النص وحاولي مرة أخرى 🌱')+'</p>';
+ result.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function resetQuiz(){render();const r=document.getElementById('result');r.style.display='none';window.scrollTo({top:0,behavior:'smooth'});}
+render();
+</script>
+</body>
+</html>
